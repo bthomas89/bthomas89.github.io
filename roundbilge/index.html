@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An interactive 3D viewer for round bilge construction layers." />
     <title>Round Bilge Construction</title>
-    <script type="module" crossorigin src="/roundbilge/assets/index-Ckzq6Xmr.js"></script>
-    <link rel="stylesheet" crossorigin href="/roundbilge/assets/index-C--LG7hY.css">
+    <script type="module" crossorigin src="/roundbilge/assets/index-Cs1D1G57.js"></script>
+    <link rel="stylesheet" crossorigin href="/roundbilge/assets/index-G35FcXjs.css">
   </head>
   <body>
     <div id="app">
@@ -32,29 +32,23 @@
         </button>
 
         <div class="panel-content" id="panelContent">
-          <div class="panel-section">
-            <span class="label">Scene</span>
-            <div class="button-row">
-              <button type="button" id="resetView" title="Reset camera view">Reset</button>
-            </div>
-          </div>
-
-          <div class="panel-section visibility-actions">
-            <span class="label">Visibility</span>
-            <div class="button-row">
-              <button type="button" id="showAll" title="Show all groups">All</button>
-              <button type="button" id="hideAll" title="Hide all groups">None</button>
-            </div>
-          </div>
-
           <div class="layer-panel" aria-label="Model visibility groups">
-            <span class="label">Layers</span>
+            <div class="layer-heading">
+              <span class="label" id="layerTitle">Layers</span>
+              <div class="button-row compact-actions">
+                <button type="button" id="showAll" title="Show all groups">All</button>
+                <button type="button" id="hideAll" title="Hide all groups">None</button>
+              </div>
+            </div>
             <div class="layer-list" id="layerList"></div>
           </div>
         </div>
       </aside>
 
-      <div class="hint">Drag to orbit. Scroll to zoom. Right drag to pan.</div>
+      <div class="view-overlay">
+        <div class="hint">Drag to orbit. Scroll to zoom. Right drag to pan.</div>
+        <button type="button" id="resetView" class="reset-view" title="Reset camera view">Reset view</button>
+      </div>
     </div>
   </body>
 </html>
