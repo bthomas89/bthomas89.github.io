@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An interactive 3D viewer for round bilge construction layers." />
     <title>Round Bilge Construction</title>
-    <script type="module" crossorigin src="/roundbilge/assets/index-BEVU6xaB.js"></script>
-    <link rel="stylesheet" crossorigin href="/roundbilge/assets/index-zKTqV_Jv.css">
+    <script type="module" crossorigin src="/roundbilge/assets/index-CiQnbH-8.js"></script>
+    <link rel="stylesheet" crossorigin href="/roundbilge/assets/index-CN6cAoi1.css">
   </head>
   <body>
     <div id="app">
@@ -16,7 +16,11 @@
       <header class="topbar">
         <div>
           <p class="eyebrow">Local model viewer</p>
-          <h1>Round Bilge Construction</h1>
+          <h1 id="modelTitle">Round Bilge Construction</h1>
+          <select class="model-select" id="modelSelect" aria-label="Select construction model">
+            <option value="round">Round Bilge</option>
+            <option value="hard-chine">Hard Chine</option>
+          </select>
         </div>
       </header>
 
